@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  </head>
+  <body>
+    <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description" class="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form id="survey-form">
+      <label id="name-label">Name <span class="red">* </span> <input placeholder="Enter your name" type="text" id="name" required/></label>
+      <label id="email-label">Email <span class="red">* </span> <input placeholder="Enter your Email" type="email" id="email" required/></label>
+      <label id="number-label">Age <span class="red">* </span> <input placeholder="Age" type="number" id="number" min="13" max="120" required/></label>
+      <label>Which option best describes your current role? <span class="red">* </span><select id="dropdown">
+        <option>Select</option>
+        <option>Student</option>
+        <option>Full Time Job</option>
+        <option>Full Time Learner</option>
+        <option>Prefer not to say</option>
+        <option>Other</option>
+      </select></label>
+      <label>
+          Would you recommend freeCodeCamp to a friend? <span class="red">* </span>
+          <label class="nest"><input type="radio" value="definetly" name="recommend" />Definetly</label>
+          <label class="nest"><input type="radio" value="maybe" name="recommend" />Maybe</label>
+          <label class="nest"><input type="radio" value="not sure"  name="recommend"/>Not Sure</label>
+      </label>
+      <label>
+        What would you like to see improved? <span class="red">* </span>
+        <label class="nest"><input type="checkbox" value="project"/>Basic Project</label>
+        <label class="nest"><input type="checkbox" value="FE-project"/>Frontend Project</label>
+        <label class="nest"><input type="checkbox" value="BE-project"/>Backend Project</label>
+      </label>
+      <label>
+        Any comments or suggestions? <span class="red">* </span>
+        <textarea placeholder="Enter your comment here ..."></textarea>
+      </label>
+      <p>(Note: <span class="red">*</span> the form marked with this must be filled)</p>
+      <input type="submit" id="submit"/>
+    </form>
+  </body>
+</html>
